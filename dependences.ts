@@ -35,18 +35,20 @@ import {
 //import { Client as ClientMariaDB } from "https://deno.land/x/mysql/mod.ts";
 
 
+
 export const { JWT_SECRET } = config({ safe: true });
 
 
 export { Application, Router, Context, Status, 
     STATUS_TEXT, expect,
     getNumericDate, jwtCreate, jwtDecode, jwtVerify, 
-    config
+    config,  
 };
 
 export type {jwtHeader, jwtPayload }; 
 
-export default sha512 ;
+export default sha512;
+
 
 export {    
     Bson,
